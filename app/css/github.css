@@ -16839,7 +16839,7 @@ html {
 body {
   overflow-x: hidden !important;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -16874,7 +16874,7 @@ body {
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 :-moz-placeholder {
@@ -16882,7 +16882,7 @@ body {
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 ::-moz-placeholder {
@@ -16890,14 +16890,14 @@ body {
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 :-ms-input-placeholder {
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 /*=Typography -------------------------------------------------------------- */
@@ -16985,7 +16985,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   letter-spacing: 1.3pt;
   color: #111111;
   clear: both;
@@ -17084,7 +17084,7 @@ ul.sublist {
 }
 
 .main-title h6 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .slogan {
@@ -17135,7 +17135,7 @@ ul.sublist {
   color: #111111;
   font-weight: 100;
   font-size: 18px;
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   border: 1px solid #f4f4f4;
   display: inline-block;
   width: 100%;
@@ -17333,13 +17333,13 @@ a:hover > span.site-name {
 }
 
 .slider-description-inner h1 {
-  font-family: 'azedobold';
+  font-family: 'Open Sans';
   font-size: 60px;
   letter-spacing: 8px;
 }
 
 .slider-description-inner h1 span {
-  font-family: 'azedolight';
+  font-family: 'Open Sans';
   background: #7beec7;
   padding: 22px;
   font-weight: 100;
@@ -17409,7 +17409,7 @@ a:hover > span.site-name {
 }
 
 .cd-headline.clip b {
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   opacity: 0;
 }
 
@@ -17444,7 +17444,7 @@ a:hover > span.site-name {
 .header-page .inner-content .header-content h1 {
   text-align: center;
   font-size: 60px;
-  font-family: 'azedobold', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .header-page .inner-content .header-content hr {
@@ -17739,10 +17739,10 @@ svg {
 
 .slide__text-heading {
   font-size: 48px;
-  font-family: 'azedobold';
+  font-family: 'Open Sans';
   text-transform: uppercase;
   font-weight: 800;
-  dispay: block;
+  display: block;
   width: 100%;
   padding: 2px;
   position: relative;
@@ -17750,7 +17750,7 @@ svg {
 }
 
 span.border-text {
-  font-family: 'azedolight';
+  font-family: 'Open Sans';
   font-weight: 100;
   color: #fff;
   border: 2px solid #fff;
@@ -17761,7 +17761,7 @@ span.border-text {
 
 .slide__text p {
   font-size: 24px;
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   padding-top: 30px;
   line-height: 30px;
   color: #111111;
@@ -18379,7 +18379,7 @@ ul.sub-menu li a {
 }
 
 .menu-information p {
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   color: #fff;
   padding-left: 71px;
   line-height: 18px;
@@ -18399,7 +18399,7 @@ ul.sub-menu li a {
   list-style: none;
   color: #fff;
   letter-spacing: 2.5pt;
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .menu-information ul li span {
@@ -18451,7 +18451,7 @@ ul.sub-menu li a {
 }
 
 .history-wrapper h4 {
-  font-family: 'Ubuntu';
+  font-family: 'Roboto Slab';
   font-weight: 400;
   line-height: 24px;
 }
@@ -19677,7 +19677,7 @@ ul.social-buttons li {
 }
 
 .blog-front-content-inner h1 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 24px;
   color: #fff;
   font-weight: 100;
@@ -19697,7 +19697,7 @@ ul.social-buttons li {
 }
 
 .single-blog-wrapper h1 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 300;
 }
 
@@ -19788,7 +19788,7 @@ ul.social-buttons li {
   margin-right: 10px;
   margin-top: 8px;
   text-align: center;
-  font-family: 'azedobold';
+  font-family: 'Open Sans';
 }
 
 /*Blog Timeline*/
@@ -19940,7 +19940,7 @@ ul.social-buttons li {
 .inner-map .inner-map-content h1 {
   text-align: center;
   font-size: 60px;
-  font-family: 'azedobold', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .inner-map .inner-map-content hr {

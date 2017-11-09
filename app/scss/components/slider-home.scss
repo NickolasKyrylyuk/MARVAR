@@ -18,11 +18,11 @@
 .slider-description-inner {
   margin-left: 6%;
   h1 {
-    font-family: 'azedobold';
+    font-family: 'Open Sans';
     font-size: 60px;
     letter-spacing: 8px;
     span {
-      font-family: 'azedolight';
+      font-family: 'Open Sans';
       background: #7beec7;
       padding: 22px;
       font-weight: 100;
@@ -91,7 +91,7 @@
     }
   }
   b {
-    font-family: 'Lekton', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     opacity: 0;
     &.is-visible {
       opacity: 1;
@@ -119,7 +119,7 @@
       h1 {
         text-align: center;
         font-size: 60px;
-        font-family: 'azedobold', sans-serif;
+        font-family: 'Roboto Slab', sans-serif;
       }
       hr {
         float: none;
