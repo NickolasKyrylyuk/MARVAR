@@ -46,9 +46,6 @@ gulp.task('minify:css', () => {
   return gulp.src('app/css/*.css')
     .pipe(sourcemaps.init())
     .pipe(csso())
-    .pipe(rename({
-      suffix: ".min"
-    }))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('app/css/min'))
 })
