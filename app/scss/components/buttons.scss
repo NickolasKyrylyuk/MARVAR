@@ -15,10 +15,9 @@
   padding: 10px 20px 10px 20px;
   text-transform: uppercase;
   font-weight: 700;
-}
-
-.btn-1:hover {
-  border: 1px solid #56c8d4;
-  box-shadow: 200px 0 0 0 #56c8d4 inset;
-  color: #fff;
+  &:hover {
+    border: 1px solid #56c8d4;
+    box-shadow: 200px 0 0 0 #56c8d4 inset;
+    color: #fff;
+  }
 }

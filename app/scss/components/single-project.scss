@@ -3,98 +3,99 @@
 
 .single-project-slider {
   position: relative;
+  .single-controls {
+    .arrow-left,
+    .arrow-right {
+      position: absolute;
+      top: calc(50% - 24px);
+      color: #fff;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 30px;
+      text-align: center;
+    }
+    .arrow-left {
+      left: 20px;
+    }
+    .arrow-right {
+      right: 20px;
+    }
+    .arrow-left a,
+    .arrow-right a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-size: 30px;
+      color: #111111;
+      border: 1px solid #fff;
+    }
+    .arrow-left a:hover {
+      color: #fff;
+      background: #7beec7;
+      border: 1px solid #7beec7;
+    }
+    .arrow-right {
+      a:hover {
+        color: #fff;
+        background: #7beec7;
+        border: 1px solid #7beec7;
+      }
+      right: 20px;
+    }
+  }
+  .slider-controls a:hover {
+    color: #7beec7;
+  }
 }
 
-.single-project-slider .single-controls .arrow-left,
-.single-project-slider .single-controls .arrow-right {
-  position: absolute;
-  top: calc(50% - 24px);
-  color: #fff;
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.single-project-slider .single-controls .arrow-left {
-  left: 20px;
-}
-
-.single-project-slider .single-controls .arrow-right {
-  right: 20px;
-}
-
-.single-project-slider .single-controls .arrow-left a,
-.single-project-slider .single-controls .arrow-right a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  font-size: 30px;
-  color: #111111;
-  border: 1px solid #fff;
-}
-
-.single-project-slider .single-controls .arrow-left a:hover,
-.single-project-slider .single-controls .arrow-right a:hover {
-  color: #fff;
-  background: #7beec7;
-  border: 1px solid #7beec7;
-}
-
-.single-project-slider .single-controls .arrow-right {
-  right: 20px;
-}
-
-.single-project-slider .slider-controls a:hover,
 .slider-controls a i:hover {
   color: #7beec7;
 }
 
 .single-portfolio-wrapper {
-  margin-top: 50px
+  margin-top: 50px;
+  span.info {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding-bottom: 25px;
+    clear: both;
+    float: left;
+  }
 }
 
-.single-portfolio-wrapper span.info {
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  padding-bottom: 25px;
-  clear: both;
-  float: left;
-}
-
-.table>thead>tr>th,
-.table>tbody>tr>th,
-.table>tfoot>tr>th,
-.table>thead>tr>td,
-.table>tbody>tr>td,
-.table>tfoot>tr>td {
-  border: 0;
-  font-size: 16px;
-  font-weight: 300;
-  color: #383838;
+.table> {
+  thead>tr>th,
+  tbody>tr>th,
+  tfoot>tr>th,
+  thead>tr>td,
+  tbody>tr>td,
+  tfoot>tr>td {
+    border: 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #383838;
+  }
 }
 
 ul.social-buttons {
   padding: 0;
-}
-
-ul.social-buttons li {
-  display: inline-block;
-  padding-right: 10px;
+  li {
+    display: inline-block;
+    padding-right: 10px;
+  }
 }
 
 .project-information td {}
 
 .single-project-images {
   margin-bottom: 30px;
-}
-
-.single-project-images img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
 }
 
 .portfolio-controls {
@@ -121,39 +122,38 @@ ul.social-buttons li {
   margin-left: 8px;
 }
 
-.btn-project a:hover {
-  cursor: pointer;
-}
-
-.btn-project a {
-  background: transparent;
-  outline: none;
-  position: relative;
-  overflow: hidden;
-  display: block;
-}
-
-.btn-project:hover a:hover:before {
-  opacity: 1;
-  transform: translate(0, 0);
-  color: #111;
-  font-weight: 100;
-}
-
-.btn-project a:before {
-  content: attr(data-hover);
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 800;
-  opacity: 0;
-  transform: translate(100%, 0);
-  transition: all .3s ease-in-out;
-  font-size: 10px;
-  background: #7beec7;
+.btn-project {
+  a {
+    &:hover {
+      cursor: pointer;
+    }
+    background: transparent;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+  &:hover a:hover:before {
+    opacity: 1;
+    transform: translate(0, 0);
+    color: #111;
+    font-weight: 100;
+  }
+  a:before {
+    content: attr(data-hover);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    opacity: 0;
+    transform: translate(100%, 0);
+    transition: all .3s ease-in-out;
+    font-size: 10px;
+    background: #7beec7;
+  }
 }
 
 
@@ -161,26 +161,26 @@ ul.social-buttons li {
 
 .similar-project {
   clear: both;
-}
-
-.similar-project h4 {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 50px;
+  h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
 }
 
 
 /* Buttons home, back, next */
 
-.btn-project a:hover i {
-  opacity: 0;
-  transform: translate(100%, 0);
-}
-
-.btn-project a i {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 800;
-  font-size: .8em;
-  transition: all .3s ease-in-out;
+.btn-project a {
+  &:hover i {
+    opacity: 0;
+    transform: translate(100%, 0);
+  }
+  i {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: .8em;
+    transition: all .3s ease-in-out;
+  }
 }

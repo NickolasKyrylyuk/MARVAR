@@ -3,22 +3,20 @@
 a {
   color: #383838;
   transition: all 0.5s;
-}
-
-a:focus {
-  outline: 0;
-}
-
-a:hover,
-a:focus {
-  color: #7beec7;
-  text-decoration: none;
-}
-
-a,
-a:visited {
+  &:focus {
+    outline: 0;
+  }
+  &:hover,
+  &:focus {
+    color: #7beec7;
+    text-decoration: none;
+  }
   font-weight: 400;
   text-decoration: none;
+  &:visited {
+    font-weight: 400;
+    text-decoration: none;
+  }
 }
 
 em {
@@ -103,25 +101,21 @@ blockquote {
   line-height: 25px;
   font-weight: 100;
   color: #787878;
-}
-
-blockquote p {
-  display: inline;
+  p {
+    display: inline;
+  }
 }
 
 ul {
   padding-left: 25px;
-}
-
-ul li {
-  list-style-type: inherit;
-}
-
-ul.list {
-  display: block;
-  line-height: 25px;
-}
-
-ul.sublist {
-  padding-left: 35px;
+  li {
+    list-style-type: inherit;
+  }
+  &.list {
+    display: block;
+    line-height: 25px;
+  }
+  &.sublist {
+    padding-left: 35px;
+  }
 }
