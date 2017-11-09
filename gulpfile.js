@@ -50,7 +50,7 @@ gulp.task('minify:css', () => {
     .pipe(gulp.dest('app/css/min'));
 })
 
-gulp.task('views', function buildHTML() {
+gulp.task('views', () => {
   return gulp.src('app/pug/*.pug')
     .pipe(pug())
     .on('error', function (err) {
@@ -68,10 +68,61 @@ gulp.task('views', function buildHTML() {
 });
 
 
-gulp.task('watcher', function () {
+gulp.task('watcher', () => {
   browserSync.init({
     server: "./app"
   });
   gulp.watch("app/scss/*", ['sass']);
   gulp.watch("app/pug/*pug", ['views']);
+});
+
+// Task to get the size of the app project
+gulp.task('size', function () {
+  gulp.src('app/**')
+    .pipe(size({
+      showFiles: true,
+    }));
+});
+
+gulp.task('build-size', () => {
+  const s = size();
+  let isSuccess = true;
+  return gulp.src('public/*')
+    .pipe(s)
+    .on('error', function (err) {
+      isSuccess = false;
+      const type = err.type || '';
+      const message = err.message || '';
+      const extract = err.extract || [];
+      const line = err.line || '';
+      const column = err.column || '';
+      gutil.log(chalk.bgHex(blue).bold('[PUG COMPILATION ERROR]') + ' ' + chalk.bgHex(blue)(type) + ' (' + line + ':' + column + ')');
+      gutil.log(chalk.hex(blue).bold('message:') + ' ' + chalk.bgHex(blue).bold(message));
+      this.emit('end')
+    })
+    .on('end', () => {
+      if (isSuccess)
+        gutil.log(chalk.bgHex(blue).bold(`Total size ${s.prettySize}`))
+    });
+});
+
+gulp.task('build', ['sass', 'views'], function () {
+
+  var buildCss = gulp.src('app/css/github.css')
+    .pipe(gulp.dest('public/css'))
+
+  var buildAjax = gulp.src('app/ajax/*')
+    .pipe(gulp.dest('public/ajax'))
+
+  var buildAjax = gulp.src('app/img/*')
+    .pipe(gulp.dest('public/img'))
+
+  var buildFonts = gulp.src('app/fonts/**/*')
+    .pipe(gulp.dest('public/fonts'))
+
+  var buildJs = gulp.src('app/js/**/*')
+    .pipe(gulp.dest('public/js'))
+
+  var buildHtml = gulp.src('app/*.html')
+    .pipe(gulp.dest('public'));
 });
