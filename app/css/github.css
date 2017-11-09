@@ -13338,30 +13338,10 @@ span.tabs-title {
     -webkit-transform: scale(1);
     opacity: 0; } }
 
-/* =Common Styles
--------------------------------------------------------------- */
-@font-face {
-  font-family: 'azedobold';
-  src: url("../fonts/azedo-bold-webfont.eot");
-  src: url("../fonts/azedo-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/azedo-bold-webfont.woff2") format("woff2"), url("../fonts/azedo-bold-webfont.woff") format("woff"), url("../fonts/azedo-bold-webfont.ttf") format("truetype"), url("../fonts/azedo-bold-webfont.svg#azedobold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'azedolight';
-  src: url("../fonts/azedo-light-webfont.eot");
-  src: url("../fonts/azedo-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/azedo-light-webfont.woff2") format("woff2"), url("../fonts/azedo-light-webfont.woff") format("woff"), url("../fonts/azedo-light-webfont.ttf") format("truetype"), url("../fonts/azedo-light-webfont.svg#azedolight") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
 body {
   overflow-x: hidden !important;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Roboto Slab', sans-serif; }
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -13397,27 +13377,27 @@ body {
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Roboto Slab', sans-serif; }
 
 :-moz-placeholder {
   /* Firefox 18- */
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Roboto Slab', sans-serif; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Roboto Slab', sans-serif; }
 
 :-ms-input-placeholder {
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Roboto Slab', sans-serif; }
 
 /*=Typography -------------------------------------------------------------- */
 a {
@@ -13489,7 +13469,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   letter-spacing: 1.3pt;
   color: #111111;
   clear: both;
@@ -13568,7 +13548,7 @@ ul.sublist {
   margin: 0; }
 
 .main-title h6 {
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Roboto Slab', sans-serif; }
 
 .slogan {
   display: block;
@@ -13604,7 +13584,7 @@ ul.sublist {
   color: #111111;
   font-weight: 100;
   font-size: 18px;
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   border: 1px solid #f4f4f4;
   display: inline-block;
   width: 100%; }
@@ -13778,12 +13758,12 @@ a:hover > span.site-name {
   margin-left: 6%; }
 
 .slider-description-inner h1 {
-  font-family: 'azedobold';
+  font-family: 'Roboto Bold';
   font-size: 60px;
   letter-spacing: 8px; }
 
 .slider-description-inner h1 span {
-  font-family: 'azedolight';
+  font-family: 'Roboto Bold';
   background: #7beec7;
   padding: 22px;
   font-weight: 100;
@@ -13871,7 +13851,7 @@ a:hover > span.site-name {
 .header-page .inner-content .header-content h1 {
   text-align: center;
   font-size: 60px;
-  font-family: 'azedobold', sans-serif; }
+  font-family: 'Roboto Slab', sans-serif; }
 
 .header-page .inner-content .header-content hr {
   float: none; }
@@ -14119,7 +14099,7 @@ svg {
 
 .slide__text-heading {
   font-size: 48px;
-  font-family: 'azedobold';
+  font-family: 'Roboto Slab';
   text-transform: uppercase;
   font-weight: 800;
   dispay: block;
@@ -14129,7 +14109,7 @@ svg {
   letter-spacing: 4.5pt; }
 
 span.border-text {
-  font-family: 'azedolight';
+  font-family: 'Roboto Slab';
   font-weight: 100;
   color: #fff;
   border: 2px solid #fff;
@@ -14139,7 +14119,7 @@ span.border-text {
 
 .slide__text p {
   font-size: 24px;
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   padding-top: 30px;
   line-height: 30px;
   color: #111111;
@@ -14162,7 +14142,7 @@ span.border-text {
   font-size: 60px;
   font-weight: 100;
   line-height: 60px;
-  font-family: 'azedolight', sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 2.5pt; }
 
 .slider-controls {
@@ -14527,7 +14507,7 @@ span.border-text {
 .menu-list ul li a {
   font-weight: 900;
   font-size: 30px;
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2.5pt;
   transition: all 350ms cubic-bezier(0.215, 0.61, 0.215, 1);
@@ -14666,7 +14646,7 @@ ul.sub-menu li a {
   bottom: 18px; }
 
 .menu-information p {
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   color: #fff;
   padding-left: 71px;
   line-height: 18px;
@@ -14684,7 +14664,7 @@ ul.sub-menu li a {
   list-style: none;
   color: #fff;
   letter-spacing: 2.5pt;
-  font-family: 'Lekton', sans-serif; }
+  font-family: 'Roboto Slab', sans-serif; }
 
 .menu-information ul li span {
   padding-right: 15px; }
@@ -14726,7 +14706,7 @@ ul.sub-menu li a {
   margin-top: 60px; }
 
 .history-wrapper h4 {
-  font-family: 'Ubuntu';
+  font-family: 'Roboto Slab';
   font-weight: 400;
   line-height: 24px; }
 
@@ -14958,7 +14938,7 @@ ul.sub-menu li a {
 
 .member:hover .overlay-member-content-inner {
   opacity: 1;
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   text-align: center; }
 
 span.position {
@@ -15759,7 +15739,7 @@ ul.social-buttons li {
   text-transform: uppercase; }
 
 .blog-front-content-inner h1 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 24px;
   color: #fff;
   font-weight: 100; }
@@ -15776,7 +15756,7 @@ ul.social-buttons li {
   color: #fff; }
 
 .single-blog-wrapper h1 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 300; }
 
 .info-title {
@@ -15844,7 +15824,7 @@ ul.social-buttons li {
   margin-right: 10px;
   margin-top: 8px;
   text-align: center;
-  font-family: 'azedobold'; }
+  font-family: 'Roboto Slab'; }
 
 /*Blog Timeline*/
 .cbp_tmtimeline {
@@ -15978,7 +15958,7 @@ ul.social-buttons li {
 .inner-map .inner-map-content h1 {
   text-align: center;
   font-size: 60px;
-  font-family: 'azedobold', sans-serif; }
+  font-family: 'Roboto Slab', sans-serif; }
 
 .inner-map .inner-map-content hr {
   float: none; }
@@ -16204,7 +16184,8 @@ ul.social-media li a i:hover {
   .slider-description-inner h1 span {
     padding: 10px;
     line-height: 32px; }
-  .slider-description-inner h1, .cd-headline {
+  .slider-description-inner h1,
+  .cd-headline {
     font-size: 20px; }
   .menu-wrap {
     width: 100%; }
@@ -16237,7 +16218,8 @@ ul.social-media li a i:hover {
     display: block; }
   .menu-content {
     padding-top: 90px; }
-  .newsletter-right, .newsletter-left {
+  .newsletter-right,
+  .newsletter-left {
     min-height: 160px; }
   .newsletter-right-inner {
     padding: 10px;

@@ -1,31 +1,7 @@
-/* =Common Styles
--------------------------------------------------------------- */
-
-@font-face {
-  font-family: 'azedobold';
-  src: url('../fonts/azedo-bold-webfont.eot');
-  src: url('../fonts/azedo-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/azedo-bold-webfont.woff2') format('woff2'), url('../fonts/azedo-bold-webfont.woff') format('woff'), url('../fonts/azedo-bold-webfont.ttf') format('truetype'), url('../fonts/azedo-bold-webfont.svg#azedobold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'azedolight';
-  src: url('../fonts/azedo-light-webfont.eot');
-  src: url('../fonts/azedo-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/azedo-light-webfont.woff2') format('woff2'), url('../fonts/azedo-light-webfont.woff') format('woff'), url('../fonts/azedo-light-webfont.ttf') format('truetype'), url('../fonts/azedo-light-webfont.svg#azedolight') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 body {
   overflow-x: hidden !important;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -69,7 +45,7 @@ body {
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 :-moz-placeholder {
@@ -77,7 +53,7 @@ body {
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 ::-moz-placeholder {
@@ -85,12 +61,12 @@ body {
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 :-ms-input-placeholder {
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }

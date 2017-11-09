@@ -15,7 +15,9 @@ var gulp = require('gulp'),
   sourcemaps = require('gulp-sourcemaps'),
   chalk = require('chalk'),
   gradient = require('gradient-string'),
-  rename = require('gulp-rename')
+  rename = require('gulp-rename'),
+  browserSync = require('browser-sync').create(),
+  uncss = require('gulp-uncss');
 
 const red = "#ff2205";
 const blue = "#00ff83";
@@ -37,6 +39,7 @@ gulp.task('sass', () => {
     })
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('app/css'))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('minify:css', () => {
@@ -44,7 +47,7 @@ gulp.task('minify:css', () => {
     .pipe(sourcemaps.init())
     .pipe(csso())
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('app/css/min'))
+    .pipe(gulp.dest('app/css/min'));
 })
 
 gulp.task('views', function buildHTML() {
@@ -60,5 +63,15 @@ gulp.task('views', function buildHTML() {
       gutil.log(chalk.hex(blue).bold('message:') + ' ' + chalk.bgHex(blue).bold(message));
       this.emit('end');
     })
-    .pipe(gulp.dest('app/html'));
+    .pipe(gulp.dest('app/html'))
+    .pipe(browserSync.stream());
+});
+
+
+gulp.task('watcher', function () {
+  browserSync.init({
+    server: "./app"
+  });
+  gulp.watch("app/scss/*", ['sass']);
+  gulp.watch("app/pug/*pug", ['views']);
 });
