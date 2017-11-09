@@ -1,0 +1,40 @@
+/* =Page Not Found
+-------------------------------------------------------------- */
+
+.page-error {
+  position: relative;
+}
+
+.page-error h1 {
+  color: #f1f1f1;
+  font-size: 21vw;
+  position: absolute;
+  left: 15%;
+  top: 50px;
+  z-index: -1;
+}
+
+.page-error h3 {
+  margin-top: 125px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #3A3939;
+  font-size: 28px;
+  float: left;
+  padding: 8px;
+}
+
+.page-error p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 65px;
+  color: #3A3939;
+  float: left;
+  padding: 8px;
+}
+
+.page-error p a {
+  color: #7beec7;
+  padding-left: 5px;
+  padding-right: 5px;
+}
