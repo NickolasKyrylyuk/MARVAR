@@ -27,7 +27,9 @@ gulp.task('sass', () => {
   return gulp.src('app/scss/github.scss')
     .pipe(sourcemaps.init())
     .pipe(stylelint())
-    .pipe(sass())
+    .pipe(sass({
+      outputStyle: "expanded"
+    }))
     .on('error', function (err) {
       const type = err.type || '';
       const message = err.message || '';
