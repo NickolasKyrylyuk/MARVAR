@@ -4,67 +4,63 @@ body {
   font-family: 'Roboto Slab', sans-serif;
 }
 
-::-webkit-scrollbar {
+&::-webkit-scrollbar {
   width: 10px;
   height: 5px;
   background-color: #eee;
   -webkit-border-radius: 0;
+  &:hover {
+    width: 7px;
+  }
 }
 
-::-webkit-scrollbar:hover {
-  width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
+&::-webkit-scrollbar-thumb {
   background: #aeaeae;
   -webkit-border-radius: 0;
+  &:hover {
+    background: #bbb;
+    cursor: pointer;
+  }
+  &:active {
+    background: #bbb;
+    cursor: pointer;
+  }
 }
 
-::-webkit-scrollbar-thumb:hover,
-::-webkit-scrollbar-thumb:active {
-  background: #bbb;
-  cursor: pointer;
-}
-
-::-moz-selection {
+&::-moz-selection {
+  background: #060606;
+  color: #fff;
   background: #060606;
   color: #fff;
 }
 
-::selection {
+&::selection {
   background: #060606;
   color: #fff;
 }
 
-::-moz-selection {
-  background: #060606;
-  color: #fff;
-}
-
-::-webkit-input-placeholder {
+&::-webkit-input-placeholder {
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
   font-family: 'Roboto Slab', sans-serif;
 }
 
-:-moz-placeholder {
-  /* Firefox 18- */
+&:-moz-placeholder {
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
   font-family: 'Roboto Slab', sans-serif;
 }
 
-::-moz-placeholder {
-  /* Firefox 19+ */
+&::-moz-placeholder {
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
   font-family: 'Roboto Slab', sans-serif;
 }
 
-:-ms-input-placeholder {
+&:-ms-input-placeholder {
   color: #787878;
   font-size: 14px;
   letter-spacing: 1pt;
