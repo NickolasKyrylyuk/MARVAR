@@ -12,30 +12,31 @@
   left: 20px;
   bottom: 20px;
   background: rgba(255, 255, 255, 0.9);
-}
-
-.arch-slider-content p {
-  font-size: 60px;
-  font-weight: 100;
-  line-height: 60px;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 2.5pt;
+  p {
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 60px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2.5pt;
+  }
 }
 
 .slider-controls {
   position: absolute;
   right: 10px;
   bottom: 10px;
-}
-
-.slider-controls a {
-  font-size: 60px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #111111;
-}
-
-.slider-controls a:hover,
-.slider-controls a i:hover {
-  color: #7beec7;
+  a {
+    font-size: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #111111;
+    &:hover {
+      color: #7beec7;
+    }
+    i {
+      &:hover {
+        color: #7beec7;
+      }
+    }
+  }
 }
