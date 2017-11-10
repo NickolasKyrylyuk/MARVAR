@@ -3,22 +3,21 @@
 a {
   color: #383838;
   transition: all 0.5s;
-}
-
-a:focus {
-  outline: 0;
-}
-
-a:hover,
-a:focus {
-  color: #7beec7;
-  text-decoration: none;
-}
-
-a,
-a:visited {
   font-weight: 400;
   text-decoration: none;
+  &:focus {
+    outline: 0;
+    color: #7beec7;
+    text-decoration: none;
+  }
+  &:hover {
+    color: #7beec7;
+    text-decoration: none;
+  }
+  &:visited {
+    font-weight: 400;
+    text-decoration: none;
+  }
 }
 
 em {
@@ -57,34 +56,51 @@ hr {
 h1 {
   font-size: 24px;
   font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  letter-spacing: 1.3pt;
+  color: #111111;
+  clear: both;
+  padding-bottom: 5px;
 }
 
 h2 {
   font-size: 22px;
+  font-family: 'Roboto Slab', sans-serif;
+  letter-spacing: 1.3pt;
+  color: #111111;
+  clear: both;
+  padding-bottom: 5px;
 }
 
 h3 {
   font-size: 20px;
+  font-family: 'Roboto Slab', sans-serif;
+  letter-spacing: 1.3pt;
+  color: #111111;
+  clear: both;
+  padding-bottom: 5px;
 }
 
 h4 {
   font-size: 18px;
+  font-family: 'Roboto Slab', sans-serif;
+  letter-spacing: 1.3pt;
+  color: #111111;
+  clear: both;
+  padding-bottom: 5px;
 }
 
 h5 {
   font-size: 16px;
+  font-family: 'Roboto Slab', sans-serif;
+  letter-spacing: 1.3pt;
+  color: #111111;
+  clear: both;
+  padding-bottom: 5px;
 }
 
 h6 {
   font-size: 14px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
   font-family: 'Roboto Slab', sans-serif;
   letter-spacing: 1.3pt;
   color: #111111;
@@ -104,18 +120,16 @@ blockquote {
   line-height: 25px;
   font-weight: 100;
   color: #787878;
-}
-
-blockquote p {
-  display: inline;
+  p {
+    display: inline;
+  }
 }
 
 ul {
   padding-left: 25px;
-}
-
-ul li {
-  list-style-type: inherit;
+  li {
+    list-style-type: inherit;
+  }
 }
 
 ul.list {
