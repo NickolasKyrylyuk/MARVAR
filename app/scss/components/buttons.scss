@@ -2,22 +2,22 @@
 -------------------------------------------------------------- */
 
 .btn {
+  font-weight: 400;
   letter-spacing: 1.5pt;
   border-radius: 0;
-  font-weight: 400;
 }
 
 .btn-1 {
-  clear: both;
+  padding: 10px 20px;
   margin-top: 45px;
-  border: 1px solid #c5c5c5;
-  color: #909090;
-  padding: 10px 20px 10px 20px;
-  text-transform: uppercase;
+  clear: both;
   font-weight: 700;
+  color: #909090;
+  text-transform: uppercase;
+  border: 1px solid #c5c5c5;
   &:hover {
+    font-weight: 700;
     border: 1px solid #56c8d4;
     box-shadow: 200px 0 0 0 #56c8d4 inset;
-    color: #fff;
   }
 }
