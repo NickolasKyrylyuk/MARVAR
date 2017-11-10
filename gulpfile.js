@@ -16,8 +16,7 @@ var gulp = require('gulp'),
   chalk = require('chalk'),
   gradient = require('gradient-string'),
   rename = require('gulp-rename'),
-  browserSync = require('browser-sync').create(),
-  uncss = require('gulp-uncss');
+  browserSync = require('browser-sync').create();
 
 const red = "#ff2205";
 const blue = "#00ff83";
@@ -26,7 +25,9 @@ gulp.task('sass', () => {
   return gulp.src('app/scss/github.scss')
     .pipe(sourcemaps.init())
     .pipe(stylelint())
-    .pipe(sass())
+    .pipe(sass({
+      outputStyle: "expanded"
+    }))
     .on('error', function (err) {
       const type = err.type || '';
       const message = err.message || '';
