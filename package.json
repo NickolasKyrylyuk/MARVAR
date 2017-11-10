@@ -10,6 +10,7 @@
     "firebase-tools": "^3.13.1",
     "gradient-string": "^1.0.0",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
     "gulp-csso": "^3.0.0",
     "gulp-eslint": "^4.0.0",
     "gulp-htmllint": "^0.0.12",
