@@ -12,19 +12,21 @@
 .logo {
   float: left;
   line-height: 100px;
+  h1 {
+    line-height: 100px;
+  }
 }
 
-a>span.site-name {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-a:hover>span.site-name {
-  color: #333;
-}
-
-.logo h1 {
-  line-height: 100px;
+a {
+  >span.site-name {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  &:hover {
+    >span.site-name {
+      color: #333;
+    }
+  }
 }
