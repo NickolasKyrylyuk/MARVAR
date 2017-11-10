@@ -9,27 +9,15 @@ body {
   height: 5px;
   background-color: #eee;
   -webkit-border-radius: 0;
-  &:hover {
-    width: 7px;
-  }
 }
 
 &::-webkit-scrollbar-thumb {
   background: #aeaeae;
   -webkit-border-radius: 0;
-  &:hover {
-    background: #bbb;
-    cursor: pointer;
-  }
-  &:active {
-    background: #bbb;
-    cursor: pointer;
-  }
+  cursor: pointer;
 }
 
 &::-moz-selection {
-  background: #060606;
-  color: #fff;
   background: #060606;
   color: #fff;
 }
