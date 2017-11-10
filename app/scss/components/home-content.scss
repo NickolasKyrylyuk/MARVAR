@@ -1,45 +1,43 @@
 /* =Home Content
 -------------------------------------------------------------- */
 
-.history-wrapper {
-  float: left;
-  width: 100%;
-}
-
-.history-wrapper article {
-  margin-top: 60px
-}
-
-.history-wrapper h4 {
-  font-family: 'Roboto Slab';
-  font-weight: 400;
-  line-height: 24px;
-}
-
 
 /* Services */
 
-.services-home-page {
-  float: left;
-}
-
-.services-home-page h4 {
-  font-weight: 600;
-}
-
-.services-icon>span {
-  font-size: 36px;
-  padding-bottom: 24px;
-  clear: both;
-  float: left;
-}
-
-.services-icon>hr {
-  float: left;
-}
-
 
 /* News Letter*/
+
+.history-wrapper {
+  float: left;
+  width: 100%;
+  article {
+    margin-top: 60px;
+  }
+  h4 {
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.services-home-page {
+  float: left;
+  h4 {
+    font-weight: 600;
+  }
+}
+
+.services-icon {
+  >span {
+    font-size: 36px;
+    padding-bottom: 24px;
+    clear: both;
+    float: left;
+  }
+  >hr {
+    float: left;
+  }
+}
 
 .newsletter-left {
   height: 325px;
@@ -54,14 +52,13 @@
   vertical-align: middle;
   padding-left: 12%;
   padding-right: 12%;
-}
-
-.newsletter-left-inner h1 {
-  text-align: left;
-  font-size: 30px;
-  font-weight: 100;
-  color: #111111;
-  line-height: 40px;
+  h1 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 100;
+    color: #111111;
+    line-height: 40px;
+  }
 }
 
 .newsletter-right {
@@ -81,30 +78,27 @@
   width: calc(100% - 100px);
   height: calc(100% - 100px);
   padding: 60px;
-}
-
-.newsletter-right-inner input {
-  width: 100%;
-  height: 45px;
-  border: 0;
-  border: 1px solid #e6e6e6;
-  outline: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.newsletter-right-inner input:focus {
-  border: 1px solid #7beec7;
-}
-
-.newsletter-right-inner input[type=submit] {
-  margin-top: 15px;
-  max-width: 175px;
-  margin: auto;
-  background: #7beec7;
-  border: 0;
-  margin-top: 30px;
-  color: #fff;
-  font-size: 18px;
-  letter-spacing: 1.5pt;
+  input {
+    width: 100%;
+    height: 45px;
+    border: 0;
+    border: 1px solid #e6e6e6;
+    outline: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    &:focus {
+      border: 1px solid #7beec7;
+    }
+  }
+  input[type=submit] {
+    margin-top: 15px;
+    max-width: 175px;
+    margin: auto;
+    background: #7beec7;
+    border: 0;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1.5pt;
+  }
 }
