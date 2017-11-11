@@ -2,11 +2,11 @@
 -------------------------------------------------------------- */
 
 .header {
-  height: 100px;
-  width: 100%;
-  background: #fff;
-  z-index: 9;
   position: relative;
+  z-index: 9;
+  width: 100%;
+  height: 100px;
+  background: #fff;
 }
 
 .logo {
@@ -18,14 +18,14 @@
 }
 
 a {
-  >span.site-name {
+  > .site-name {
+    font-size: 16px;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: bold;
-    font-size: 16px;
   }
   &:hover {
-    >span.site-name {
+    > .site-name {
       color: #333;
     }
   }
