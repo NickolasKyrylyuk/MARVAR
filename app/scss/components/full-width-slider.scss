@@ -13,29 +13,26 @@ svg {
 
 .architecture-slider-menu {
   position: fixed;
-  width: 100%;
   z-index: 4;
+  width: 100%;
 }
 
 .slider-container {
   position: relative;
   height: 100%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   cursor: all-scroll;
+  user-select: none;
 }
 
 .slider-control {
-  z-index: 2;
   position: absolute;
   top: 0;
+  z-index: 2;
   width: 12%;
   height: 100%;
-  transition: opacity 0.3s;
-  will-change: opacity;
   opacity: 0;
+  transition: opacity .3s;
+  will-change: opacity;
 }
 
 .slider-control.inactive {
@@ -52,69 +49,65 @@ svg {
 
 .slider-control.left {
   left: 0;
-  cursor: url(../img/slider-left.png), auto;
+  cursor: url("../img/slider-left.png"), auto;
 }
 
 .slider-control.right {
   right: 0;
-  cursor: url(../img/slider-right.png), auto;
+  cursor: url("../img/slider-right.png"), auto;
 }
 
 .slider-pagi {
   position: absolute;
-  z-index: 3;
   right: 0;
   bottom: 2rem;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  font-size: 0;
-  list-style-type: none;
+  z-index: 3;
   padding: 0;
   margin: 0;
+  font-size: 0;
+  list-style-type: none;
+  transform: translateX(-50%);
 }
 
 .slider-pagi__elem {
   position: relative;
   display: block;
-  vertical-align: top;
   width: 10px;
   height: 10px;
-  margin: 14px 0.5rem;
-  border: 1px solid #111111;
+  margin: 14px .5rem;
+  vertical-align: top;
   cursor: pointer;
+  border: 1px solid #111;
   border-radius: 50%;
-  &:before {
-    content: "";
+  &::before {
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
     width: 5px;
     height: 5px;
-    background: #111111;
+    content: "";
+    background: #111;
     border-radius: 50%;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    -webkit-transform: translate(-50%, -50%) scale(0);
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
     transform: translate(-50%, -50%) scale(0);
   }
   &:hover {
-    &:before {
-      -webkit-transform: translate(-50%, -50%) scale(1);
+    &::before {
       transform: translate(-50%, -50%) scale(1);
     }
   }
 }
 
 .slider-pagi__elem.active {
-  &:before {
-    -webkit-transform: translate(-50%, -50%) scale(1);
+  &::before {
     transform: translate(-50%, -50%) scale(1);
   }
 }
 
 .slider {
-  z-index: 1;
   position: relative;
+  z-index: 1;
   height: 100%;
   .slide {
     &:nth-child(1) {
@@ -175,12 +168,10 @@ svg {
 }
 
 .slider.animating {
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
+  transition: transform .5s;
   will-change: transform;
   .slide__bg {
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
+    transition: transform .5s;
     will-change: transform;
   }
 }
@@ -207,12 +198,10 @@ svg {
 .slide.active {
   .slide__overlay {
     opacity: 1;
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   .slide__text {
     opacity: 1;
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -228,13 +217,12 @@ svg {
 }
 
 .slide__text-link {
+  position: relative;
   z-index: 5;
   display: inline-block;
-  position: relative;
-  padding: 0.5rem;
-  cursor: pointer;
+  padding: .5rem;
   font-size: 2.3rem;
-  -webkit-perspective: 1000px;
+  cursor: pointer;
   perspective: 1000px;
 }
 
@@ -257,57 +245,53 @@ svg {
   left: 0;
   height: 100%;
   min-height: 720px;
-  transition: -webkit-transform 0.5s 0.5s, opacity 0.2s 0.5s;
-  transition: transform 0.5s 0.5s, opacity 0.2s 0.5s;
-  will-change: transform, opacity;
-  -webkit-transform: translate3d(-20%, 0, 0);
-  transform: translate3d(-20%, 0, 0);
   opacity: 0;
+  transition: transform .5s .5s, opacity .2s .5s;
+  will-change: transform, opacity;
+  transform: translate3d(-20%, 0, 0);
   path {
-    opacity: 0.9;
+    opacity: .9;
   }
 }
 
 .slide__text {
   position: absolute;
-  width: 28%;
   bottom: 30%;
   left: 12%;
+  width: 28%;
   color: #fff;
-  transition: -webkit-transform 0.5s 0.8s, opacity 0.5s 0.8s;
-  transition: transform 0.5s 0.8s, opacity 0.5s 0.8s;
-  will-change: transform, opacity;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
   opacity: 0;
+  transition: transform .5s .8s, opacity .5s .8s;
+  will-change: transform, opacity;
+  transform: translateY(-50%);
   p {
-    font-size: 24px;
-    font-family: 'Roboto Slab', sans-serif;
     padding-top: 30px;
-    line-height: 30px;
-    color: #111111;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 24px;
     font-weight: 400;
+    line-height: 30px;
+    color: #111;
   }
 }
 
 .slide__text-heading {
-  font-size: 48px;
-  font-family: 'Roboto Slab';
-  text-transform: uppercase;
-  font-weight: 800;
-  dispay: block;
+  position: relative;
+  display: block;
   width: 100%;
   padding: 2px;
-  position: relative;
+  font-family: "Roboto Slab";
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
   letter-spacing: 4.5pt;
 }
 
-span.border-text {
-  font-family: 'Roboto Slab';
+.border-text {
+  padding: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: "Roboto Slab";
   font-weight: 100;
   color: #fff;
   border: 2px solid #fff;
-  padding: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
