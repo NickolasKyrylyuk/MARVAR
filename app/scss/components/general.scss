@@ -1,48 +1,27 @@
 /* =General
 -------------------------------------------------------------- */
 
+/* the animation definition */
 
-/*the animation definition*/
-
-@-webkit-keyframes "fadeInUp" {
+@keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 80px, 0);
     transform: translate3d(0, 80px, 0);
   }
   100% {
     opacity: 1;
-    -webkit-transform: none;
     transform: none;
   }
 }
 
-@keyframes "fadeInUp" {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 80px, 0);
-    -ms-transform: translate3d(0, 80px, 0);
-    transform: translate3d(0, 80px, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
-}
-
-
-/*Parallax Move*/
+/* Parallax Move */
 
 .clearfix {
   clear: both;
 }
 
 .seperate {
-  clear: both;
   height: 35px;
-  height: 100px;
   clear: both;
 }
 
@@ -52,7 +31,7 @@
 }
 
 .image-cover {
-  background-size: cover !important;
+  background-size: cover;
 }
 
 .no-padding {
@@ -72,15 +51,15 @@
 }
 
 .main-title {
-  clear: both;
   margin-bottom: 50px;
+  clear: both;
   h1 {
+    margin: 0;
     font-size: 24px;
     font-weight: 700;
-    margin: 0;
   }
   h6 {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: "Roboto Slab", sans-serif;
   }
 }
 
@@ -95,18 +74,18 @@
 }
 
 .second-title {
-  padding: 100px 0 90px 0;
+  padding: 100px 0 90px;
   h1 {
+    margin: 0;
     font-size: 18px;
     font-weight: 700;
     text-align: left;
-    margin: 0;
   }
   hr {
+    float: left;
     width: 22px;
     height: 2px;
     background: #56c8d4;
-    float: left;
   }
   .slogan {
     display: block;
@@ -119,85 +98,80 @@
   float: right;
   padding: 0;
   li {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
     a {
-      color: #111111;
-      font-weight: 100;
-      font-size: 18px;
-      font-family: 'Roboto Slab', sans-serif;
-      border: 1px solid #f4f4f4;
       display: inline-block;
       width: 100%;
+      font-family: "Roboto Slab", sans-serif;
+      font-size: 18px;
+      font-weight: 100;
+      color: #111;
+      border: 1px solid #f4f4f4;
       &:hover {
         color: #333;
         background-color: #7beec7;
       }
     }
-    span.page-numbers {
-      color: #111111;
-      font-weight: 100;
-      font-size: 18px;
-      font-family: 'Roboto Slab', sans-serif;
-      border: 1px solid #f4f4f4;
+    .page-numbers {
       display: inline-block;
       width: 100%;
+      font-family: "Roboto Slab", sans-serif;
+      font-size: 18px;
+      font-weight: 100;
+      color: #111;
+      border: 1px solid #f4f4f4;
     }
-    line-height: 48px;
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-    text-align: center;
-    span.page-numbers.current {
+    .page-numbers .current {
       background-color: #7beec7;
     }
   }
-  li.current {
+  .current {
     a {
       background-color: #7beec7;
     }
   }
   i {
-    font-size: 30px;
     display: inline-table;
+    font-size: 30px;
     vertical-align: middle;
   }
 }
 
 .scroll-top {
   position: fixed;
-  bottom: 15px;
   right: 15px;
-  cursor: pointer;
+  bottom: 15px;
+  z-index: 9;
   width: 50px;
   height: 50px;
-  background-color: #333;
-  text-align: center;
   color: #fff;
-  z-index: 9;
+  text-align: center;
+  cursor: pointer;
+  background-color: #333;
   i {
-    color: #fff;
     font-size: 48px;
+    color: #fff;
   }
 }
 
 .animated {
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
 .animated.infinite {
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
 .animated.hinge {
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
 
 .fadeInUp {
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 
@@ -207,14 +181,7 @@
     position: relative;
     z-index: 4;
     max-width: 100%;
-    -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
-    -o-transform-origin: 50% 50%;
+    transition: opacity .3s ease-out, transform .2s ease-out;
     transform-origin: 50% 50%;
-    -webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.2s ease-out;
-    -moz-transition: opacity 0.3s ease-out, -moz-transform 0.2s ease-out;
-    -o-transition: opacity 0.3s ease-out, -o-transform 0.2s ease-out;
-    transition: opacity 0.3s ease-out, transform 0.2s ease-out;
   }
 }
