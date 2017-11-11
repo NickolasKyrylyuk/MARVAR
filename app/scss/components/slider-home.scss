@@ -1,8 +1,6 @@
-/*Slider Home*/
-
+/* Slider Home */
 
 /* Text Slider Clip */
-
 .slider-wrapper {
   position: relative;
 }
@@ -21,16 +19,16 @@
 .slider-description-inner {
   margin-left: 6%;
   h1 {
-    font-family: 'Roboto Bold';
+    font-family: "Roboto Bold";
     font-size: 60px;
     letter-spacing: 8px;
     span {
-      font-family: 'Roboto Bold';
-      background: #7beec7;
       padding: 22px;
-      font-weight: 100;
       margin-left: 10px;
+      font-family: "Roboto Bold";
+      font-weight: 100;
       line-height: 80px;
+      background: #7beec7;
     }
   }
 }
@@ -41,25 +39,25 @@
 }
 
 .cd-headline {
-  font-size: 30px;
   margin-top: 40px;
-  color: #000;
+  font-size: 30px;
   font-weight: 100;
+  color: #000;
   letter-spacing: 3pt;
 }
 
 .cd-words-wrapper {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   b {
-    display: inline-block;
     position: absolute;
-    white-space: nowrap;
-    left: 0;
     top: 0;
-    font-weight: normal;
+    left: 0;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
   }
-  b.is-visible {
+  .is-visible {
     position: relative;
   }
 }
@@ -69,7 +67,7 @@
     b {
       opacity: 0;
     }
-    b.is-visible {
+    .is-visible {
       opacity: 1;
     }
   }
@@ -84,20 +82,20 @@
     overflow: hidden;
     vertical-align: top;
     &::after {
-      content: '';
       position: absolute;
       top: 0;
       right: 0;
       width: 1px;
       height: 100%;
+      content: "";
       background-color: #000;
     }
   }
   b {
-    font-family: 'Lekton', sans-serif;
+    font-family: "Open Sans", sans-serif;
     opacity: 0;
   }
-  b.is-visible {
+  .is-visible {
     opacity: 1;
   }
 }
@@ -106,27 +104,27 @@
   position: relative;
   min-height: 450px;
   .inner-content {
-    padding: 25px;
-    background: rgba(255, 255, 255, 0.8);
     display: table;
-    height: 410px;
     width: calc(100% - 40px);
+    height: 410px;
+    padding: 25px;
     margin-top: 20px;
     margin-left: 20px;
+    background: rgba(255, 255, 255, .8);
     .header-content {
       display: table-cell;
       vertical-align: middle;
       h1 {
-        text-align: center;
+        font-family: "Roboto Slab", sans-serif;
         font-size: 60px;
-        font-family: 'Roboto Slab', sans-serif;
+        text-align: center;
       }
       hr {
         float: none;
       }
       p {
-        text-align: center;
         font-size: 18px;
+        text-align: center;
       }
     }
   }
