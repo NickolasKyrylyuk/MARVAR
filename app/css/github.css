@@ -17632,8 +17632,8 @@ svg {
   min-height: 720px;
   opacity: 0;
   transition: transform .5s .5s, opacity .2s .5s;
-  will-change: transform, opacity;
   transform: translate3d(-20%, 0, 0);
+  will-change: transform, opacity;
 }
 
 .slide__overlay path {
@@ -17648,8 +17648,8 @@ svg {
   color: #fff;
   opacity: 0;
   transition: transform .5s .8s, opacity .5s .8s;
-  will-change: transform, opacity;
   transform: translateY(-50%);
+  will-change: transform, opacity;
 }
 
 .slide__text p {
@@ -19029,12 +19029,12 @@ svg {
 }
 
 .details {
-  font-family: "Open Sans";
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 3;
   padding: 20px;
+  font-family: "Open Sans";
 }
 
 .details .title {
@@ -19412,11 +19412,11 @@ svg {
 }
 
 .circle {
+  opacity: .3;
+  transition: all .5s ease-in-out;
   stroke: #48ac8a;
   stroke-dasharray: 650;
   stroke-dashoffset: 650;
-  opacity: .3;
-  transition: all .5s ease-in-out;
 }
 
 .playBut {
@@ -19428,22 +19428,22 @@ svg {
 
 .playBut .triangle {
   transition: all .7s ease-in-out;
+  transform: translateY(0);
   stroke-dasharray: 240;
   stroke-dashoffset: 480;
   stroke: #000;
-  transform: translateY(0);
 }
 
 .playBut:hover .triangle {
-  stroke-dashoffset: 0;
   opacity: 1;
-  stroke: #48ac8a;
   animation: nudge .7s ease-in-out;
+  stroke-dashoffset: 0;
+  stroke: #48ac8a;
 }
 
 .playBut:hover .circle {
-  stroke-dashoffset: 0;
   opacity: 1;
+  stroke-dashoffset: 0;
 }
 
 .blog-front-content {
@@ -19668,7 +19668,6 @@ svg {
   width: 60px;
   height: 60px;
   margin: 0 0 0 -35px;
-  speak: none;
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
@@ -19677,9 +19676,10 @@ svg {
   color: #fff;
   text-align: center;
   text-transform: none;
-  -webkit-font-smoothing: antialiased;
   background: #5f5f5f;
   border-radius: 50%;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 .cbp_tmlabel h1 {
