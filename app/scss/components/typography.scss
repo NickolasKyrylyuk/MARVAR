@@ -1,14 +1,14 @@
-/*=Typography -------------------------------------------------------------- */
+/* =Typography -------------------------------------------------------------- */
 
 a {
-  color: #383838;
-  transition: all 0.5s;
   font-weight: 400;
+  color: #383838;
   text-decoration: none;
+  transition: all .5s;
   &:focus {
-    outline: 0;
     color: #7beec7;
     text-decoration: none;
+    outline: 0;
   }
   &:hover {
     color: #7beec7;
@@ -29,83 +29,83 @@ strong {
 }
 
 small {
-  font-size: 0.8em;
+  font-size: .8em;
 }
 
 p {
-  color: #111111;
-  line-height: 24px;
+  clear: both;
+  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 100;
-  clear: both;
-  letter-spacing: 0.4px;
-  font-family: 'Open Sans';
+  line-height: 24px;
+  color: #111;
+  letter-spacing: .4px;
 }
 
 hr {
+  float: left;
   width: 40px;
   height: 1px;
-  background: #111111;
-  border-top: 0;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 20px;
   clear: both;
-  float: left;
+  background: #111;
+  border-top: 0;
 }
 
 h1 {
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Roboto Slab', sans-serif;
-  letter-spacing: 1.3pt;
-  color: #111111;
-  clear: both;
   padding-bottom: 5px;
+  clear: both;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 1.3pt;
 }
 
 h2 {
-  font-size: 22px;
-  font-family: 'Roboto Slab', sans-serif;
-  letter-spacing: 1.3pt;
-  color: #111111;
-  clear: both;
   padding-bottom: 5px;
+  clear: both;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 22px;
+  color: #111;
+  letter-spacing: 1.3pt;
 }
 
 h3 {
-  font-size: 20px;
-  font-family: 'Roboto Slab', sans-serif;
-  letter-spacing: 1.3pt;
-  color: #111111;
-  clear: both;
   padding-bottom: 5px;
+  clear: both;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 20px;
+  color: #111;
+  letter-spacing: 1.3pt;
 }
 
 h4 {
-  font-size: 18px;
-  font-family: 'Roboto Slab', sans-serif;
-  letter-spacing: 1.3pt;
-  color: #111111;
-  clear: both;
   padding-bottom: 5px;
+  clear: both;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 18px;
+  color: #111;
+  letter-spacing: 1.3pt;
 }
 
 h5 {
-  font-size: 16px;
-  font-family: 'Roboto Slab', sans-serif;
-  letter-spacing: 1.3pt;
-  color: #111111;
-  clear: both;
   padding-bottom: 5px;
+  clear: both;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 16px;
+  color: #111;
+  letter-spacing: 1.3pt;
 }
 
 h6 {
-  font-size: 14px;
-  font-family: 'Roboto Slab', sans-serif;
-  letter-spacing: 1.3pt;
-  color: #111111;
-  clear: both;
   padding-bottom: 5px;
+  clear: both;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 14px;
+  color: #111;
+  letter-spacing: 1.3pt;
 }
 
 b {
@@ -113,13 +113,13 @@ b {
 }
 
 blockquote {
-  margin: 30px 0 30px;
   padding: 0 0 0 20px;
+  margin: 30px 0 30px;
   font-size: 18px;
-  border-left: 4px solid #787878;
-  line-height: 25px;
   font-weight: 100;
+  line-height: 25px;
   color: #787878;
+  border-left: 4px solid #787878;
   p {
     display: inline;
   }
@@ -132,11 +132,11 @@ ul {
   }
 }
 
-ul.list {
+.list {
   display: block;
   line-height: 25px;
 }
 
-ul.sublist {
+.sublist {
   padding-left: 35px;
 }
