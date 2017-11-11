@@ -3,10 +3,10 @@
 
 .cover {
   position: fixed;
-  left: 0px;
-  top: 0px;
+  top: 0;
+  left: 0;
+  z-index: 99999;
   width: 100%;
   height: 100%;
-  z-index: 99999;
-  background: rgba(232, 232, 232, 0.95);
+  background: rgba(232, 232, 232, .95);
 }
