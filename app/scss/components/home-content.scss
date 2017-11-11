@@ -1,12 +1,9 @@
 /* =Home Content
 -------------------------------------------------------------- */
 
-
 /* Services */
 
-
-/* News Letter*/
-
+/* News Letter */
 .history-wrapper {
   float: left;
   width: 100%;
@@ -14,7 +11,7 @@
     margin-top: 60px;
   }
   h4 {
-    font-family: 'Roboto Slab';
+    font-family: "Roboto Slab";
     font-weight: 400;
     line-height: 24px;
   }
@@ -28,77 +25,75 @@
 }
 
 .services-icon {
-  >span {
-    font-size: 36px;
+  > span {
+    float: left;
     padding-bottom: 24px;
     clear: both;
-    float: left;
+    font-size: 36px;
   }
-  >hr {
+  > hr {
     float: left;
   }
 }
 
 .newsletter-left {
-  height: 325px;
-  width: 100%;
-  background-color: #7beec7;
   display: table;
+  width: 100%;
+  height: 325px;
   text-align: center;
+  background-color: #7beec7;
 }
 
 .newsletter-left-inner {
   display: table-cell;
-  vertical-align: middle;
-  padding-left: 12%;
   padding-right: 12%;
+  padding-left: 12%;
+  vertical-align: middle;
   h1 {
-    text-align: left;
     font-size: 30px;
     font-weight: 100;
-    color: #111111;
     line-height: 40px;
+    color: #111;
+    text-align: left;
   }
 }
 
 .newsletter-right {
   position: relative;
-  height: 325px;
-  width: 100%;
-  background-color: #7beec7;
   display: table;
+  width: 100%;
+  height: 325px;
   text-align: center;
+  background-color: #7beec7;
 }
 
 .newsletter-right-inner {
   position: absolute;
-  left: 50px;
   top: 50px;
-  background: #fff;
+  left: 50px;
   width: calc(100% - 100px);
   height: calc(100% - 100px);
   padding: 60px;
+  background: #fff;
   input {
     width: 100%;
     height: 45px;
+    padding-right: 20px;
+    padding-left: 20px;
     border: 0;
     border: 1px solid #e6e6e6;
     outline: 0;
-    padding-left: 20px;
-    padding-right: 20px;
     &:focus {
       border: 1px solid #7beec7;
     }
   }
-  input[type=submit] {
-    margin-top: 15px;
+  [type="submit"] {
     max-width: 175px;
-    margin: auto;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1.5pt;
     background: #7beec7;
     border: 0;
-    margin-top: 30px;
-    color: #fff;
-    font-size: 18px;
-    letter-spacing: 1.5pt;
   }
 }
