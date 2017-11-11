@@ -352,6 +352,11 @@
 }
 
 .details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  padding: 20px;
   font-family: "Open Sans";
   .title {
     font-size: 18px;
@@ -371,11 +376,6 @@
     text-transform: uppercase;
     letter-spacing: 1.5pt;
   }
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 3;
-  padding: 20px;
   span {
     position: relative;
     top: 100px;
