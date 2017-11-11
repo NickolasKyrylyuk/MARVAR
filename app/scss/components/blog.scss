@@ -109,6 +109,7 @@
   }
   .post-date {
     display: block;
+    font-family: "Roboto Slab";
     font-size: 24px;
     color: #fff;
     text-align: center;
@@ -136,12 +137,13 @@
 }
 
 .info-title {
-  padding-left: 8px;
+  font-family: "Open Sans";
   line-height: 45px;
   color: #fff;
 }
 
 .post-single-date {
+  font-family: "Roboto Slab";
   font-size: 24px;
   color: #fff;
   text-transform: uppercase;
@@ -190,6 +192,7 @@
       }
     }
     a {
+      font-family: "Open Sans";
       font-size: 12px;
       font-weight: 100;
       color: #111;
