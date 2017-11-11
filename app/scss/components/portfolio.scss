@@ -1,16 +1,13 @@
 /* =Portfolio General
 -------------------------------------------------------------- */
 
-
 /* Filter Button */
 
+/* Overlay Thumb Portftolio and Team */
 
-/*Overlay Thumb Portftolio and Team*/
+/* Details on portfolio */
 
-
-/*Details on portfolio*/
-
-@-webkit-keyframes "fade" {
+@keyframes fade {
   0% {
     color: transparent;
   }
@@ -22,19 +19,7 @@
   }
 }
 
-@keyframes "fade" {
-  0% {
-    color: transparent;
-  }
-  50% {
-    color: #505050;
-  }
-  100% {
-    color: transparent;
-  }
-}
-
-@-webkit-keyframes "size" {
+@keyframes size {
   0% {
     padding-top: 0;
   }
@@ -46,41 +31,16 @@
   }
 }
 
-@keyframes "size" {
-  0% {
-    padding-top: 0;
-  }
-  50% {
-    padding-top: 8px;
-  }
-  100% {
-    padding-top: 0;
-  }
-}
-
-@-webkit-keyframes "spin" {
+@keyframes spin {
   from {
-    -webkit-transform: rotate(360deg);
-  }
-  to {
-    -webkit-transform: rotate(0);
-  }
-}
-
-@keyframes "spin" {
-  from {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
   to {
-    -webkit-transform: rotate(0);
     transform: rotate(0);
   }
 }
 
-
 /* Height of portfolio */
-
 
 /* Height 3 column Portfolio */
 
@@ -89,43 +49,36 @@
 }
 
 .nav {
-  -webkit-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
-  background: #86eecb;
-  cursor: pointer;
-  border: none;
-  width: 48px;
-  height: 48px;
-  float: left;
   position: relative;
   z-index: 1;
+  float: left;
+  width: 48px;
+  height: 48px;
   margin-right: 25px;
+  cursor: pointer;
+  background: #86eecb;
+  border: none;
+  backface-visibility: hidden;
   &:focus {
     outline: none;
   }
   .icon-container {
-    width: 100%;
     position: absolute;
     top: 16px;
     left: 0;
+    width: 100%;
     cursor: pointer;
-    -webkit-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
     backface-visibility: hidden;
   }
   .line {
-    width: 26px;
     position: absolute;
-    left: 0;
     right: 0;
-    margin: auto;
+    left: 0;
+    width: 26px;
     height: 2px;
+    margin: auto;
     background-color: #545454;
-    transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
+    transition: all 300ms cubic-bezier(.215, .61, .355, 1);
     transform: translate3d(0, 0, 0);
   }
   .line01 {
@@ -148,7 +101,6 @@
   }
   &:hover {
     .line {
-      -webkit-transform: translate3d(0, -7px, 0);
       transform: translate3d(0, -7px, 0);
     }
     .line01 {
@@ -178,7 +130,7 @@
 
 .open.nav {
   .line {
-    transition: all 0.3s;
+    transition: all .3s;
     &:nth-child(2) {
       background: 0;
     }
@@ -186,21 +138,18 @@
       background: 0;
     }
     &:nth-child(1) {
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
       top: 7px;
       opacity: 1;
+      transform: rotate(-45deg);
     }
     &:nth-child(3) {
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
       top: 7px;
       opacity: 1;
+      transform: rotate(45deg);
     }
   }
   &:hover {
     .line {
-      -webkit-transform: none;
       transform: none;
     }
   }
@@ -208,33 +157,32 @@
 
 .works-filter {
   float: left;
-  line-height: 46px;
   margin-bottom: 42px;
+  line-height: 46px;
   a {
     display: inline-block;
-    font-size: 18px;
     padding-right: 8px;
     padding-left: 8px;
-    color: #111111;
+    font-size: 18px;
     font-weight: 300;
-    -webkit-transform: translate3d(-200px, 0, 0);
-    transform: translate3d(-200px, 0, 0);
+    color: #111;
     opacity: 0;
-    &:before {
+    transform: translate3d(-200px, 0, 0);
+    &::before {
       padding-right: 20px;
       padding-left: 20px;
-      color: #111111;
+      color: #111;
     }
     &:first-child {
-      &:before {
-        content: "  ";
+      &::before {
         padding-right: 5px;
         padding-left: 5px;
-        color: #111111;
+        color: #111;
+        content: "";
       }
     }
   }
-  a.active {
+  .active {
     color: #7beec7;
   }
 }
@@ -243,7 +191,6 @@
   a {
     opacity: 1;
     transition: all 300ms cubic-bezier(.175, .885, .32, 1.075);
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     &:nth-child(1) {
       transition-duration: 600ms;
@@ -269,29 +216,26 @@
 }
 
 .js-masonry {
-  height: 100% !important;
+  height: 100%;
   clear: both;
 }
 
 .img {
   position: relative;
-  overflow: hidden;
   display: inherit;
+  overflow: hidden;
   img {
     display: block;
-    margin: auto;
     max-width: 100%;
     height: auto;
-    transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -o-transition: opacity 0.35s, -o-transform 0.35s;
+    margin: auto;
+    transition: opacity .35s, transform .35s;
   }
   &:hover {
     img {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
       transition: -webkit-transform 3s;
-      transition: transform 0.5s;
+      transition: transform .5s;
+      transform: scale(1.1);
     }
     .like-product {
       opacity: 1;
@@ -301,30 +245,30 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
+    z-index: 4;
     width: 100%;
     height: 100%;
-    z-index: 1;
     overflow: hidden;
     border: none;
-    transition: all 0.5s ease-out;
-    z-index: 4;
+    transition: all .5s ease-out;
     &:hover {
       background-color: rgba(123, 238, 199, .9);
     }
   }
   .overlay-thumb.bg-white {
     &:hover {
-      background-color: rgba(255, 255, 255, 0.65);
+      background-color: rgba(255, 255, 255, .65);
     }
   }
   .like-product {
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
     z-index: 9;
+    text-align: center;
     cursor: pointer;
     opacity: 0;
-    text-align: center;
   }
 }
 
@@ -335,82 +279,58 @@
 }
 
 .overlay-thumb {
-  a.main-portfolio-link {
+  .main-portfolio-link {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 4;
     width: 100%;
     height: 100%;
     padding: 45px;
-    z-index: 4;
-    cursor: url(../img/cursor.png), auto;
+    cursor: url("../img/cursor.png"), auto;
   }
   span {
     position: relative;
     z-index: 1;
     line-height: 15px;
-    transition: 0.3s ease;
-    -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
-    -ms-transition: 0.3s ease;
+    transition: .3s ease;
   }
   .btnBefore {
-    content: '';
     position: absolute;
-    height: 0;
-    width: 0;
-    border: solid #000;
-    border-width: 0;
-    transition: all ease-in-out;
-    -webkit-transition: all ease-in-out;
-    -moz-transition: all ease-in-out;
-    -o-transition: all ease-in-out;
-    -ms-transition: all ease-in-out;
-    width: 0;
-    height: 0;
     right: 0;
     bottom: 0;
-  }
-  .btnAfter {
-    content: '';
-    position: absolute;
-    height: 0;
     width: 0;
+    height: 0;
+    content: "";
     border: solid #000;
     border-width: 0;
     transition: all ease-in-out;
-    -webkit-transition: all ease-in-out;
-    -moz-transition: all ease-in-out;
-    -o-transition: all ease-in-out;
-    -ms-transition: all ease-in-out;
+  }
+  .btnAfter {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 0;
     height: 0;
-    left: 0;
-    top: 0;
+    content: "";
+    border: solid #000;
+    border-width: 0;
+    transition: all ease-in-out;
   }
   &:hover {
     .btnBefore {
-      border-width: 0 0 3px 3px;
-      height: 100%;
       width: 100%;
-      transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-      -webkit-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-      -moz-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-      -o-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-      -ms-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+      height: 100%;
+      border-width: 0 0 3px 3px;
+      transition: width .5s ease, height .5s ease .5s, border-top-right-radius .1s ease .4s, border-bottom-left-radius .1s ease .4s, border-bottom-right-radius .1s ease .9s, border-top-left-radius .1s ease .9s;
     }
     .btnAfter {
-      border-width: 3px 3px 0 0;
-      height: 100%;
       width: 100%;
-      transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-      -webkit-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-      -moz-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-      -o-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
-      -ms-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+      height: 100%;
+      border-width: 3px 3px 0 0;
+      transition: width .5s ease, height .5s ease .5s, border-top-right-radius .1s ease .4s, border-bottom-left-radius .1s ease .4s, border-bottom-right-radius .1s ease .9s, border-top-left-radius .1s ease .9s;
     }
-    &:before {
+    &::before {
       opacity: 1;
     }
     span {
@@ -422,113 +342,103 @@
       }
     }
     .title {
-      transition-delay: 0.15s;
+      transition-delay: .15s;
     }
     .info {
-      transition-delay: 0.25s;
+      transition-delay: .25s;
     }
   }
 }
 
 .details {
-  span.title {
-    color: #111111;
+  .title {
     font-size: 18px;
-    letter-spacing: 1.2pt;
+    font-weight: 600;
     line-height: 24px;
+    line-height: 1;
+    color: #111;
     text-transform: uppercase;
+    letter-spacing: 1.2pt;
   }
-  span.info {
-    color: #111111;
+  .info {
+    margin-top: 5px;
     font-size: 14px;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #111;
     text-transform: uppercase;
+    letter-spacing: 1.5pt;
   }
-  padding: 20px;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 3;
+  padding: 20px;
   span {
-    display: block;
-    opacity: 0;
     position: relative;
     top: 100px;
-    transition-property: top, opacity;
-    transition-duration: 0.3s;
+    display: block;
+    opacity: 0;
     transition-delay: 0s;
-  }
-  .title {
-    line-height: 1;
-    font-weight: 600;
-    font-size: 18px;
-  }
-  .info {
-    line-height: 1.2;
-    letter-spacing: 1.5pt;
-    margin-top: 5px;
-    font-size: 12px;
+    transition-duration: .3s;
+    transition-property: top, opacity;
   }
 }
 
 .like-product {
+  position: absolute;
+  right: 0;
+  bottom: 70px;
+  left: 0;
+  z-index: 7;
+  padding-left: 48px;
+  font-size: 2px;
+  font-weight: 400;
+  line-height: 58px;
+  color: transparent;
+  visibility: hidden;
+  transition: .6s;
   i {
-    font-size: 24px;
-    cursor: pointer;
+    display: inline-block;
     margin-top: 18px;
     margin-left: 18px;
+    font-size: 24px;
+    color: #111;
+    cursor: pointer;
     border-radius: 50%;
-    display: inline-block;
-    color: #111111;
     transition: .4s;
   }
-  i.press {
-    -webkit-animation: size .4s;
-    animation: size .4s;
+  .press {
     color: #505050;
+    animation: size .4s;
   }
 }
 
 .output {
-  color: #111111;
-  clear: both;
   display: block;
   padding-left: 18px;
+  clear: both;
+  color: #111;
 }
 
-span.like-product {
-  position: absolute;
-  bottom: 70px;
-  left: 0;
-  right: 0;
-  visibility: hidden;
-  transition: .6s;
-  z-index: 7;
-  font-size: 2px;
-  color: transparent;
-  font-weight: 400;
-  padding-left: 48px;
-  line-height: 58px;
-}
-
-span.press {
-  line-height: 70px;
+.press {
   font-size: 14px;
+  line-height: 70px;
   visibility: visible;
-  -webkit-animation: fade 1s;
   animation: fade 1s;
 }
 
 .load-more {
-  text-align: center;
-  margin-top: 50px;
-  clear: both;
   float: left;
   width: 100%;
+  margin-top: 50px;
+  clear: both;
+  text-align: center;
   a {
-    text-decoration: none;
-    color: #111111;
-    text-transform: uppercase;
     font-size: 38px;
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
     &:hover {
       color: #56c8d4;
     }
@@ -536,26 +446,10 @@ span.press {
 }
 
 .spinef {
-  -webkit-animation-name: spin;
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: spin;
-  -moz-animation-duration: 1.5s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: spin;
-  -ms-animation-duration: 1.5s;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: linear;
-  -webkit-animation-name: spin;
   animation-name: spin;
-  -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .home-portfolio-image {
@@ -564,6 +458,6 @@ span.press {
 
 .height-3column {
   height: 410px;
-  overflow: hidden;
   margin-bottom: 30px;
+  overflow: hidden;
 }
