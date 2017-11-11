@@ -55,11 +55,11 @@
 }
 
 .circle {
+  opacity: .3;
+  transition: all .5s ease-in-out;
   stroke: #48ac8a;
   stroke-dasharray: 650;
   stroke-dashoffset: 650;
-  opacity: .3;
-  transition: all .5s ease-in-out;
 }
 
 .playBut {
@@ -69,21 +69,21 @@
   transition: all .5s ease;
   .triangle {
     transition: all .7s ease-in-out;
+    transform: translateY(0);
     stroke-dasharray: 240;
     stroke-dashoffset: 480;
     stroke: #000;
-    transform: translateY(0);
   }
   &:hover {
     .triangle {
-      stroke-dashoffset: 0;
       opacity: 1;
-      stroke: #48ac8a;
       animation: nudge .7s ease-in-out;
+      stroke-dashoffset: 0;
+      stroke: #48ac8a;
     }
     .circle {
-      stroke-dashoffset: 0;
       opacity: 1;
+      stroke-dashoffset: 0;
     }
   }
 }
@@ -294,7 +294,6 @@
       width: 60px;
       height: 60px;
       margin: 0 0 0 -35px;
-      speak: none;
       font-size: 28px;
       font-style: normal;
       font-weight: 400;
@@ -303,9 +302,10 @@
       color: #fff;
       text-align: center;
       text-transform: none;
-      -webkit-font-smoothing: antialiased;
       background: #5f5f5f;
       border-radius: 50%;
+      speak: none;
+      -webkit-font-smoothing: antialiased;
     }
   }
 }

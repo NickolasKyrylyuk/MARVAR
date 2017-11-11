@@ -247,8 +247,8 @@ svg {
   min-height: 720px;
   opacity: 0;
   transition: transform .5s .5s, opacity .2s .5s;
-  will-change: transform, opacity;
   transform: translate3d(-20%, 0, 0);
+  will-change: transform, opacity;
   path {
     opacity: .9;
   }
@@ -262,8 +262,8 @@ svg {
   color: #fff;
   opacity: 0;
   transition: transform .5s .8s, opacity .5s .8s;
-  will-change: transform, opacity;
   transform: translateY(-50%);
+  will-change: transform, opacity;
   p {
     padding-top: 30px;
     font-family: "Roboto Slab", sans-serif;
