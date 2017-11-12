@@ -15,8 +15,9 @@ var gulp = require('gulp'),
   chalk = require('chalk'),
   gradient = require('gradient-string'),
   rename = require('gulp-rename'),
+  ftp = require('vinyl-ftp'),
   browserSync = require('browser-sync').create();
-
+  
 const red = "#ff2205";
 const blue = "#00ff83";
 
@@ -107,4 +108,22 @@ gulp.task('build', ['sass', 'views'], function () {
 
   var buildHtml = gulp.src('app/*.html')
     .pipe(gulp.dest('public'));
+});
+
+function getFtpConnection() {
+  return ftp.create({
+    host: "files.000webhost.com",
+    port: 21,
+    user: "marvar",
+    password: "MarvarPassword",
+    parallel: 5,
+    log: gutil.log
+  });
+}
+
+gulp.task('ftp-deploy', function () {
+  var conn = getFtpConnection();
+  return gulp.src("app/css/github.css", { base: '.', buffer: false })
+    .pipe(conn.newer("public_html"))
+    .pipe(conn.dest("public_html"));
 });
