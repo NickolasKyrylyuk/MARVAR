@@ -6,7 +6,6 @@ var gulp = require('gulp'),
   imagemin = require('gulp-imagemin'),
   notify = require('gulp-notify'),
   plumber = require('gulp-plumber'),
-  pug = require('gulp-pug'),
   sass = require('gulp-sass'),
   size = require('gulp-size'),
   stylelint = require('gulp-stylelint'),
@@ -50,24 +49,6 @@ gulp.task('minify:css', () => {
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('app/css/min'));
 })
-
-gulp.task('views', () => {
-  return gulp.src('app/pug/*.pug')
-    .pipe(pug())
-    .on('error', function (err) {
-      const type = err.type || '';
-      const message = err.message || '';
-      const extract = err.extract || [];
-      const line = err.line || '';
-      const column = err.column || '';
-      gutil.log(chalk.bgHex(blue).bold('[PUG COMPILATION ERROR]') + ' ' + chalk.bgHex(blue)(type) + ' (' + line + ':' + column + ')');
-      gutil.log(chalk.hex(blue).bold('message:') + ' ' + chalk.bgHex(blue).bold(message));
-      this.emit('end');
-    })
-    .pipe(gulp.dest('app/html'))
-    .pipe(browserSync.stream());
-});
-
 
 gulp.task('watcher', () => {
   browserSync.init({
