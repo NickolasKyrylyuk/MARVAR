@@ -89,25 +89,25 @@ gulp.task('build-size', () => {
     });
 });
 
-gulp.task('build', ['sass', 'views'], function () {
+gulp.task('build', ['sass'], function () {
 
   var buildCss = gulp.src('app/css/github.css')
-    .pipe(gulp.dest('public/css'))
+    .pipe(gulp.dest('build/css'))
 
   var buildAjax = gulp.src('app/ajax/*')
-    .pipe(gulp.dest('public/ajax'))
+    .pipe(gulp.dest('build/ajax'))
 
   var buildAjax = gulp.src('app/img/*')
-    .pipe(gulp.dest('public/img'))
+    .pipe(gulp.dest('build/img'))
 
   var buildFonts = gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('public/fonts'))
+    .pipe(gulp.dest('build/fonts'))
 
   var buildJs = gulp.src('app/js/**/*')
-    .pipe(gulp.dest('public/js'))
+    .pipe(gulp.dest('build/js'))
 
   var buildHtml = gulp.src('app/*.html')
-    .pipe(gulp.dest('public'));
+    .pipe(gulp.dest('build'));
 });
 
 function getFtpConnection() {
