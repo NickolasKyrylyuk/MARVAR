@@ -1,8 +1,7 @@
 {
-  "password": "H*%7j^Po4!hvRn^#@A",
-  "ftpPassword": "MarvarPassword",
+  "password": "MarvarPassword",
   "siteName": "marvar",
   "email": "nickolaskyrylyuk@gmail.com",
   "userName": "Nickolas",
-  "homePage": "http://localhost/test/"
+  "localHomePage": "http://localhost/test/"
 }
